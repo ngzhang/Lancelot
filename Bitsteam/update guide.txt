@@ -28,3 +28,4 @@ Tips:
 4, a typical invalid rate is 5%. 
 5, Job interval time can use about 6~7S for a better performance.
 6, the speed measure is not accurate this time. please check the "shares pre hour" for a speed measures.
+7, the JTAG pin is at bottom left of the board. from left to right: VCC/GND/TCK/TDO/TDI/TMS
