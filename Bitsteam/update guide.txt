@@ -1,0 +1,30 @@
+warning: 
+1, not recommend for icarus board. but you try if you can take the risks.
+2, if the board running abnormal, please switch back to the 380M bitsteam.
+3, if the board invalid rate is higher than 10%, please switch back to the 380M bitsteam.
+4, not guarantee every Lancelot board can normally operation with this bitsteam. 
+5, recommend you to use 42.bit for Interim test, it will lost if you turn off the board.
+
+features:
+1, fully auto speed regulation. about 460~520MH/s on Lancelot board.
+
+how to update:
+1, install XILINX Lab tooles (or ISE). i use V13.4. V14.2 may have some strange issues.
+2, find and open "iMPACT" tool. press "cancel" if any dialog box popup.
+3, connect the Platform Cable, power the board. the indicator light on the cable turn green.
+4, click " Boundary Scan".  click "Initialize Chain". press "cancel" if any dialog box popup.
+5, click "SPI/BPI ?" icon at the top of xc6slx150 device. and assign the MCS file. delect "SPI PROM", "W25Q64BV/CV", "1".
+6, repeat step 5 for the other FPGA.
+7, right click FLASH icon and select program.
+8, wait for at least 8 min, than it will success.
+9, turn off Icarus, and tun on. you will find the FLASH is already updated.
+10, do  7~9 for the other FPGA.
+11, finish.
+
+Tips:
+1, will significantly increase heat and power. about 23W pre board. so you need a power adaper can provide 12V@2A continuously.
+2, cooling is very important. please DO NOT remove the original heat-sink and fan, they are enough for the top. use another fan blow from the side. the PCB it self is a heat-sink too.
+3, not recommend for voltage adjustment.
+4, a typical invalid rate is 5%. 
+5, Job interval time can use about 6~7S for a better performance.
+6, the speed measure is not accurate this time. please check the "shares pre hour" for a speed measures.

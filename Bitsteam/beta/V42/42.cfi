@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator O.87xd
+# Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION O.87xd
+DATE            11/04/2012 - 20:26
+SOURCE          C:\42.mcs
+DEVICE          8192K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x48A967CD
+START_ADDRESS   0x00000000 END_ADDRESS 0x00406533 DIRECTION_UP   "C:/Users/ngzhang/Documents/My WangWang/main(41).bit" 6slx150fgg484
